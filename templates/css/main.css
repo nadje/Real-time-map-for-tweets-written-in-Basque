@@ -1,0 +1,509 @@
+
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+@font-face {
+    font-family: MuseoSans100;
+    src: url("/static/media/fonts/MuseoSans_100Web.eot");
+}
+
+@font-face {
+    font-family: MuseoSans100;
+    src: url("/static/media/fonts/MuseoSans_100Web.woff") format("woff");
+}
+ß
+@font-face {
+    font-family: MuseoSans500;
+    src: url("/static/media/fonts/MuseoSans_500Web.eot");
+}
+
+@font-face {
+    font-family: MuseoSans500;
+    src: url("/static/media/fonts/MuseoSans_500Web.woff") format("woff");
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.3;
+    background-color: #f2f2f3;
+    font-family: MuseoSans100, sans-serif;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#backline {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background: #f2f2f3 url('/static/media/img/backline.png') repeat-x left top;
+    z-index: 9999; 
+}
+
+#social {
+    position: fixed !important;
+    overflow: visible;
+    margin-left: 809px;
+    margin-top: 658px;
+    z-index: 9999;    
+}
+
+img.social {
+    margin-right: 13px;
+}
+
+/*
+ * Wrappers
+ */
+
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+  margin-top: 51px;
+}
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+    height: 100% !important;
+    height: 100%;
+    overflow: hidden;
+    width: 930px !important;
+    max-width: 930px !important;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/*
+ * Navigation
+ */
+
+.nav {
+    position: fixed !important;
+    overflow: visible;
+    margin-left: 330px;
+    margin-top: 62px;
+    z-index: 9999;    
+}
+
+.nav span {
+    margin-left: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav span {
+    font-family: MuseoSans500, sans-serif;
+    font-size: 14px;
+    color: {{ g.color_code }};
+    text-transform:uppercase;
+}
+
+.nav span:hover {
+    background-color: black;    
+}
+
+.nav span.selected {
+    background-color: black;
+}
+
+.nav span a {
+    text-decoration: None;
+    color: {{ g.color_code }};
+}
+
+.nav span a:active, a:focus {
+    outline: none;
+}
+
+.scroll {
+    position: fixed !important;
+    overflow: visible;
+    margin-left: 411px;
+    bottom: 0;
+    z-index: 9999;    
+}
+
+/*
+ * Section: Start
+ */
+
+section.start img.poio-logo {
+    margin-bottom: 32px;
+}
+
+section.start {
+    margin-top: 105px;
+}
+
+section.start p {
+    font-size: 55px;
+    margin: 0;
+}
+
+section.start p a {
+    color: {{ g.color_code }};
+    text-decoration: none;
+}
+
+/*
+ * Section: About
+ */
+
+section.about img.poio_logo {
+    margin-bottom: 50px;
+}
+
+section.about p {
+    font-size: 38px;
+}
+
+section.about p a {
+    color: black;
+    text-decoration: none;
+}
+
+section.about p#tools {
+    margin-bottom: 57px;
+    margin-top: 0;
+}
+
+/*
+ * Section: Tools
+ */
+
+section.tools img.poio-logo {
+    margin-bottom: 75px;
+}
+
+section.tools p {
+    font-size: 47px;
+}
+
+section.tools p a {
+    color: {{ g.color_code }};
+    text-decoration: none;
+}
+
+section.tools textarea {
+    font-family: MuseoSans100, sans-serif;
+    background-color: #f2f2f3;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+section.tools select option {
+    color: #000;
+}
+
+p#predictor {
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p#predictor span.predicted-word-inside {
+    font-size: 19px;
+    margin-left: 15px;
+    margin-right: 25px;
+    position: relative;
+    top: -6px;
+}
+
+/*
+ * Section: Map
+ */
+
+section.map img.poio_logo {
+    margin-bottom: 0px;
+}
+
+
+/*
+ * Section: Team
+ */
+
+
+section.team img.poio_logo {
+    margin-bottom: 12px;
+}
+
+section.team p {
+    font-size: 42px;
+    margin: 0;
+}
+
+section.team p.team_member {
+    width: 290px;
+    font-size: 13px;
+    float: left;
+}
+
+section.team p#team_members {
+    margin-top: 23px;
+}
+
+section.team p a {
+    text-decoration: none;
+    color: {{ g.color_code }};
+}
+
+img.team_photo {
+    margin-left: 50px;
+}
+
+img.team_name {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+/*
+ * Section: Documentation
+ */
+
+section.documentation p {
+    font-size: 38px;
+    margin: 0;
+}
+
+section.documentation p a {
+    text-decoration: none;
+    color: {{ g.color_code }};
+}
+
+section.documentation img.poio_logo {
+    margin-bottom: 52px;
+}
+
+p.green {
+    color: {{ g.color_code }};
+}
+
+p.black {
+    color: #000;
+}
+
+p.centered {
+    text-align: center
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
