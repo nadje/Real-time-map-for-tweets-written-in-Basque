@@ -3,10 +3,10 @@ import json
 import csv
 import nltk
 
-consumer_key = 'SpI3mgC7UKQOHnUcr3jRlQ'
-consumer_secret = 'p7Qt4QHCrTWIOYszr9uy7lgrOcgjLyL1bgMSo9U4yM'
-access_token = '2206833558-PmY7kN9MbvUbbxqaVc7g5mpKG9mn5Kod0lqcDy1'
-access_token_secret = 'Df48hcvchUSZqnt3bpk1raJeao22AXsUEum2sZzZhujox'
+consumer_key = 'consumer key'
+consumer_secret = 'consumer secret'
+access_token = 'access token'
+access_token_secret = 'access token secret'
 
 auth = tweepy.auth.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -91,7 +91,7 @@ if __name__ == '__main__':
     # In this example follow #programming tag
     # For more details refer to https://dev.twitter.com/docs/streaming-apis
     stream = tweepy.Stream(auth, l)
- 
+    # Stream filtering some frequent basque words
     stream.filter(track=['izan', 'zuen', 'euskal', 'egin', 'euskara', 'hizkuntza', 'ziren', 'euskararen','zituen'])
     #stream.filter(track=['izan', 'zuen', 'euskal', 'egin', 'euskara', 'hizkuntza', 'ziren', 'euskararen','zituen', 'zuten', 'esan', 'eman', 'jainkoak', 'euskarak', 'artean', 'jaunak', 'irakurri', 'euskaraz', 'herriko', 'nafarroako', 'ondoren', 'horiek'])
 
